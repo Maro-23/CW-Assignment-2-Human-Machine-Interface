@@ -53,10 +53,7 @@ int main()
     DIO_SetPinState('b', 4 , 'h'); //turn on the green LED (SAFE)
   }
 
- 
-
   IntToStr(display_reading, reading_buffer); //change the value to be displayed on the screen from an integer to a string to display properly
-  IntToStr(adc_compare, limit_buffer);   //change the value to be displayed on the screen from an integer to a string to display properly
 
   LCD_Command(0x01); //clear the display each loop
   LCD_Command(0x80); //move cursor to first line
